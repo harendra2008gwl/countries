@@ -7,14 +7,7 @@ target 'Countries' do
 
   # Pods for Countries
 
-  target 'CountriesTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'CountriesUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+pod 'SDWebImage'
+pod 'SDWebImageSVGCoder'
 
 end
