@@ -44,16 +44,17 @@ class ServerClient: NSObject {
         let task = session.dataTask(with: request as URLRequest, completionHandler: { data, _, error in
 
             guard error == nil else {
+                completetionHandler(nil, error)
                 return
             }
 
             guard let data = data else {
                 return
             }
-
+            completetionHandler(data, nil)
             do {
                 // create json object from data
-                if let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
+                if let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [Any] {
                     print(json)
                 }
             } catch let error {

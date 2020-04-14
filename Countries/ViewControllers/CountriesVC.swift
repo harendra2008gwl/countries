@@ -9,22 +9,41 @@
 import UIKit
 
 class CountriesVC: UIViewController {
+    lazy var countryViewModel: CountryVM = {
+        let viewModel = CountryVM()
+        viewModel.delegate = self
+        return viewModel
+
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.initialSetup()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: private Methods
+    
+    private func initialSetup() {
+        self.registerNibs()
+        
     }
-    */
+    
+    private func registerNibs (){
+        
+    }
+    
+    private func getCountries() {
+        countryViewModel.getCountries(pharse: "india")
+    }
+}
 
+extension CountriesVC: CountryVMDelegate  {
+    func didReceived(_ countries: [Country]) {
+        DispatchQueue.main.async {
+            // TODO....
+        }
+    }
+    func didFailed(withMessage message: String?) {
+        // Handle case if anything goes wrong
+    }
 }
