@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XCf-90-y98">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -39,12 +39,153 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="QC0-ZJ-Zct"/>
                     <connections>
                         <outlet property="countryListTbl" destination="oeQ-Cf-Ec4" id="9Qr-fm-lfG"/>
                         <outlet property="searchBar" destination="McU-d4-8S0" id="8G3-LC-6Gt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="125.89285714285714"/>
+        </scene>
+        <!--Country DetailVC-->
+        <scene sceneID="6Wk-b9-Ecp">
+            <objects>
+                <viewController storyboardIdentifier="CountryDetailVC" id="8p8-nd-5HY" customClass="CountryDetailVC" customModule="Countries" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ox0-of-050">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNu-9O-qHi">
+                                <rect key="frame" x="15" y="52" width="55" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gif-gB-WnI"/>
+                                    <constraint firstAttribute="width" constant="55" id="sNt-H2-f0K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="15"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="actionBackBtn" destination="8p8-nd-5HY" eventType="touchUpInside" id="aXs-mv-rYT"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RH7-Cu-ZZ9">
+                                <rect key="frame" x="132" y="59" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="gye-yH-wH7"/>
+                                    <constraint firstAttribute="height" constant="150" id="iRj-zg-9vS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1n-tL-KEd">
+                                <rect key="frame" x="10" y="259" width="394" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="xG5-14-5WQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capital" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRw-ec-vlh">
+                                <rect key="frame" x="10" y="304" width="394" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="eZ3-7P-Y9L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calling Codes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nty-M6-ffV">
+                                <rect key="frame" x="10" y="349" width="299" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="oWW-Y4-YHE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Uo-05-zDG">
+                                <rect key="frame" x="329" y="349" width="55" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MCw-sz-1qP"/>
+                                    <constraint firstAttribute="width" constant="55" id="OIx-6X-04f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="15"/>
+                                <state key="normal" title="Show"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Region" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBK-61-qk5">
+                                <rect key="frame" x="10" y="394" width="394" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Axf-3k-Udz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sub-Region" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Amb-TH-qsk">
+                                <rect key="frame" x="10" y="439" width="394" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="lfQ-eA-B4F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="n1n-tL-KEd" firstAttribute="leading" secondItem="fPc-Ds-L1c" secondAttribute="leading" constant="10" id="1tL-ls-ITR"/>
+                            <constraint firstItem="fPc-Ds-L1c" firstAttribute="trailing" secondItem="n1n-tL-KEd" secondAttribute="trailing" constant="10" id="BkI-Pn-Q6q"/>
+                            <constraint firstItem="7Uo-05-zDG" firstAttribute="leading" secondItem="nty-M6-ffV" secondAttribute="trailing" constant="20" id="CTc-Bx-xUJ"/>
+                            <constraint firstItem="nty-M6-ffV" firstAttribute="top" secondItem="oRw-ec-vlh" secondAttribute="bottom" constant="15" id="Ga2-cT-JUF"/>
+                            <constraint firstItem="BNu-9O-qHi" firstAttribute="top" secondItem="fPc-Ds-L1c" secondAttribute="top" constant="8" id="Hnw-tz-SDo"/>
+                            <constraint firstItem="oRw-ec-vlh" firstAttribute="top" secondItem="n1n-tL-KEd" secondAttribute="bottom" constant="15" id="M4n-It-8NU"/>
+                            <constraint firstItem="FBK-61-qk5" firstAttribute="leading" secondItem="fPc-Ds-L1c" secondAttribute="leading" constant="10" id="ROX-gP-h4n"/>
+                            <constraint firstItem="FBK-61-qk5" firstAttribute="top" secondItem="nty-M6-ffV" secondAttribute="bottom" constant="15" id="bFX-XX-Dga"/>
+                            <constraint firstItem="BNu-9O-qHi" firstAttribute="leading" secondItem="fPc-Ds-L1c" secondAttribute="leading" constant="15" id="cWY-RR-wAP"/>
+                            <constraint firstItem="Amb-TH-qsk" firstAttribute="top" secondItem="FBK-61-qk5" secondAttribute="bottom" constant="15" id="exw-4Y-AWA"/>
+                            <constraint firstItem="RH7-Cu-ZZ9" firstAttribute="centerX" secondItem="ox0-of-050" secondAttribute="centerX" id="fOt-av-xCu"/>
+                            <constraint firstItem="fPc-Ds-L1c" firstAttribute="trailing" secondItem="Amb-TH-qsk" secondAttribute="trailing" constant="10" id="h4Y-3b-XJg"/>
+                            <constraint firstItem="nty-M6-ffV" firstAttribute="leading" secondItem="fPc-Ds-L1c" secondAttribute="leading" constant="10" id="iOM-3E-hAG"/>
+                            <constraint firstItem="7Uo-05-zDG" firstAttribute="centerY" secondItem="nty-M6-ffV" secondAttribute="centerY" id="jTD-w8-Fq0"/>
+                            <constraint firstItem="Amb-TH-qsk" firstAttribute="leading" secondItem="fPc-Ds-L1c" secondAttribute="leading" constant="10" id="lex-Ti-3at"/>
+                            <constraint firstItem="n1n-tL-KEd" firstAttribute="top" secondItem="RH7-Cu-ZZ9" secondAttribute="bottom" constant="50" id="qIL-a6-nJN"/>
+                            <constraint firstItem="fPc-Ds-L1c" firstAttribute="trailing" secondItem="7Uo-05-zDG" secondAttribute="trailing" constant="30" id="sti-uj-hsI"/>
+                            <constraint firstItem="fPc-Ds-L1c" firstAttribute="trailing" secondItem="oRw-ec-vlh" secondAttribute="trailing" constant="10" id="yN4-R5-A1W"/>
+                            <constraint firstItem="oRw-ec-vlh" firstAttribute="leading" secondItem="fPc-Ds-L1c" secondAttribute="leading" constant="10" id="yoe-4N-442"/>
+                            <constraint firstItem="fPc-Ds-L1c" firstAttribute="trailing" secondItem="FBK-61-qk5" secondAttribute="trailing" constant="10" id="z37-Az-BVH"/>
+                            <constraint firstItem="RH7-Cu-ZZ9" firstAttribute="top" secondItem="fPc-Ds-L1c" secondAttribute="top" constant="15" id="zye-wL-zLC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fPc-Ds-L1c"/>
+                    </view>
+                    <connections>
+                        <outlet property="flag" destination="RH7-Cu-ZZ9" id="6xe-6G-9qm"/>
+                        <outlet property="lblCallingCodes" destination="nty-M6-ffV" id="eDP-0B-slR"/>
+                        <outlet property="lblCapital" destination="oRw-ec-vlh" id="UBm-Tw-4PS"/>
+                        <outlet property="lblName" destination="n1n-tL-KEd" id="dea-ku-lSQ"/>
+                        <outlet property="lblRegion" destination="FBK-61-qk5" id="C0X-EY-4nl"/>
+                        <outlet property="lblSubRegion" destination="Amb-TH-qsk" id="bzD-w6-nl9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xl8-7g-wvC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1808.6956521739132" y="125.89285714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AkZ-Pg-qsx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="XCf-90-y98" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="USB-QT-Pzy">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ka3-XQ-VdK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KnD-Kg-284" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="125.89285714285714"/>
         </scene>

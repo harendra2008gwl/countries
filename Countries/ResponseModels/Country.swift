@@ -8,6 +8,7 @@
 
 import UIKit
 
+//MARK: Country object
 struct Country: Codable {
     var name: String?
     var region: String?
@@ -16,6 +17,8 @@ struct Country: Codable {
     var subregion: String?
     var callingCodes: [String]?
     var timezones: [String]?
+    var languages: [Language]?
+    var currencies: [Currency]?
 
     enum CodingKeys: String, CodingKey {
         case name
@@ -25,5 +28,35 @@ struct Country: Codable {
         case subregion
         case callingCodes
         case timezones
+        case languages
+        case currencies
+    }
+}
+
+//MARK: Language object
+struct Language: Codable {
+    var iso639_1: String?
+    var iso639_2: String?
+    var name: String?
+    var nativeName: String?
+
+    enum CodingKeys: String, CodingKey {
+        case iso639_1
+        case iso639_2
+        case name
+        case nativeName
+    }
+}
+
+//MARK: Currency object
+struct Currency: Codable {
+    var code: String?
+    var name: String?
+    var symbol: String?
+
+    enum CodingKeys: String, CodingKey {
+        case code
+        case name
+        case symbol
     }
 }

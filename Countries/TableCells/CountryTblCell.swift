@@ -35,8 +35,7 @@ class CountryTblCell: UITableViewCell {
             // load SVG url
 
             let bitmapSize = CGSize(width: 50, height: 50)
-            let placeHolder = UIImage(named: "loading")
-            flag.sd_setImage(with: URL(string: urlString), placeholderImage: placeHolder, options: [], context: [.imageThumbnailPixelSize: bitmapSize])
+            flag.sd_setImage(with: URL(string: urlString), placeholderImage: Utility.loadingPlaceHolderImage, options: [], context: [.imageThumbnailPixelSize: bitmapSize])
         }
     }
 }

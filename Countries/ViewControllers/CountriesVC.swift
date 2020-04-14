@@ -49,6 +49,8 @@ class CountriesVC: UIViewController {
 }
 
 extension CountriesVC: UITableViewDelegate, UITableViewDataSource {
+    // MARK: UITableView Delegate and DataSource Methods
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         countryList?.count ?? 0
     }
@@ -62,9 +64,23 @@ extension CountriesVC: UITableViewDelegate, UITableViewDataSource {
         cell.configure(list[indexPath.row])
         return cell
     }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let country = self.countryList?[indexPath.row], let vc = Utility.getVC("CountryDetailVC") as? CountryDetailVC else {
+            return
+        }
+
+        DispatchQueue.main.async {
+            self.view.endEditing(true)
+            vc.country = country
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 }
 
 extension CountriesVC: UISearchBarDelegate {
+    // MARK: UISearchBar Delegate Methods
+
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         self.searchBar.showsCancelButton = true
     }
@@ -94,6 +110,8 @@ extension CountriesVC: UISearchBarDelegate {
 }
 
 extension CountriesVC: CountryVMDelegate {
+    // MARK: CountryVM Delegate Methods
+
     func didReceived(_ countries: [Country]) {
         DispatchQueue.main.async {
             self.countryList?.removeAll()
