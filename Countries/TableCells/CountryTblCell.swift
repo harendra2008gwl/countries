@@ -6,13 +6,14 @@
 //  Copyright © 2020 harendra sharma. All rights reserved.
 //
 
+import SDWebImage
+import SDWebImageSVGCoder
 import UIKit
 
 class CountryTblCell: UITableViewCell {
-
     @IBOutlet var name: UILabel!
     @IBOutlet var flag: UIImageView!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,8 +24,19 @@ class CountryTblCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
     func configure(_ country: Country) {
-        self.name.text = country.name ?? ""
+        name.text = country.name ?? ""
+
+        if let urlString = country.flag {
+            // register coder, on AppDelegate
+            let SVGCoder = SDImageSVGCoder.shared
+            SDImageCodersManager.shared.addCoder(SVGCoder)
+            // load SVG url
+
+            let bitmapSize = CGSize(width: 50, height: 50)
+            let placeHolder = UIImage(named: "loading")
+            flag.sd_setImage(with: URL(string: urlString), placeholderImage: placeHolder, options: [], context: [.imageThumbnailPixelSize: bitmapSize])
+        }
     }
 }
