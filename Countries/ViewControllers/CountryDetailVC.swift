@@ -45,4 +45,10 @@ class CountryDetailVC: UIViewController {
     @IBAction func actionBackBtn() {
         navigationController?.popViewController(animated: true)
     }
+
+    @IBAction func actionCallingCodeBtn() {
+        if let vc = Utility.getVC("CommonListVC") as? CommonListVC {
+            navigationController?.present(vc, animated: true, completion: nil)
+        }
+    }
 }

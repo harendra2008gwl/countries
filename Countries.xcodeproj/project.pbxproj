@@ -23,6 +23,7 @@
 		D346C83E2446263900DDE1A4 /* ServerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D346C83D2446263900DDE1A4 /* ServerClient.swift */; };
 		D3ADFF8D2446428E007C557D /* CountryDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADFF8C2446428E007C557D /* CountryDetailVC.swift */; };
 		D3ADFF902446452C007C557D /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADFF8F2446452C007C557D /* Utility.swift */; };
+		D3ADFF9224464E36007C557D /* CommonListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADFF9124464E36007C557D /* CommonListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		D346C83D2446263900DDE1A4 /* ServerClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerClient.swift; sourceTree = "<group>"; };
 		D3ADFF8C2446428E007C557D /* CountryDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailVC.swift; sourceTree = "<group>"; };
 		D3ADFF8F2446452C007C557D /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		D3ADFF9124464E36007C557D /* CommonListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonListVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 			children = (
 				D346C83A244625DC00DDE1A4 /* CountriesVC.swift */,
 				D3ADFF8C2446428E007C557D /* CountryDetailVC.swift */,
+				D3ADFF9124464E36007C557D /* CommonListVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				D346C83B244625DC00DDE1A4 /* CountriesVC.swift in Sources */,
 				D33ECA90244624E7003B7C4C /* AppDelegate.swift in Sources */,
 				D33ECA92244624E7003B7C4C /* SceneDelegate.swift in Sources */,
+				D3ADFF9224464E36007C557D /* CommonListVC.swift in Sources */,
 				D32233AE24462DDC00C25066 /* Country.swift in Sources */,
 				D346C83E2446263900DDE1A4 /* ServerClient.swift in Sources */,
 			);
