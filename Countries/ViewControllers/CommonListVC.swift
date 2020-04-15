@@ -35,6 +35,17 @@ class CommonListVC: UIViewController {
 
     private func initialSetup() {
         registerNibs()
+        switch listType {
+        case .callingCodes:
+            LblHeaderTitle.text = "Calling Codes"
+        case .currencyCodes:
+            LblHeaderTitle.text = "Currencies"
+        case .timeZone:
+            LblHeaderTitle.text = "Time Zones"
+        case .languageCodes:
+            LblHeaderTitle.text = "Language Codes"
+        }
+
         commonTble.delegate = self
         commonTble.dataSource = self
         commonTble.estimatedRowHeight = 60.0
