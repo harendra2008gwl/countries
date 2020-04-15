@@ -28,7 +28,7 @@
                         <constraints>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Aeg-yk-6AW"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
+                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>

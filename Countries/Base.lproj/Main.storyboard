@@ -212,18 +212,42 @@
                                     <action selector="actionBackBtn" destination="pt9-br-Lyv" eventType="touchUpInside" id="FZf-Y7-4fb"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4h9-tM-AFH">
+                                <rect key="frame" x="0.0" y="87" width="414" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="D81-EO-UoI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hmQ-5F-ZGH">
+                                <rect key="frame" x="0.0" y="127" width="414" height="735"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="LLp-29-ZVo" firstAttribute="bottom" secondItem="hmQ-5F-ZGH" secondAttribute="bottom" id="9G3-K9-kQk"/>
+                            <constraint firstItem="hmQ-5F-ZGH" firstAttribute="trailing" secondItem="LLp-29-ZVo" secondAttribute="trailing" id="BXU-cm-DlN"/>
+                            <constraint firstItem="hmQ-5F-ZGH" firstAttribute="leading" secondItem="LLp-29-ZVo" secondAttribute="leading" id="BZ4-LA-Kuh"/>
                             <constraint firstItem="BiT-Hk-tLJ" firstAttribute="leading" secondItem="LLp-29-ZVo" secondAttribute="leading" constant="15" id="Jdl-4y-U7I"/>
                             <constraint firstItem="BiT-Hk-tLJ" firstAttribute="top" secondItem="LLp-29-ZVo" secondAttribute="top" constant="8" id="Jwh-ux-p22"/>
+                            <constraint firstItem="LLp-29-ZVo" firstAttribute="trailing" secondItem="4h9-tM-AFH" secondAttribute="trailing" id="avw-nO-muT"/>
+                            <constraint firstItem="4h9-tM-AFH" firstAttribute="leading" secondItem="LLp-29-ZVo" secondAttribute="leading" id="iZg-BA-V7r"/>
+                            <constraint firstItem="hmQ-5F-ZGH" firstAttribute="top" secondItem="4h9-tM-AFH" secondAttribute="bottom" constant="10" id="o8X-6i-TYv"/>
+                            <constraint firstItem="4h9-tM-AFH" firstAttribute="top" secondItem="LLp-29-ZVo" secondAttribute="top" constant="43" id="oBu-t9-TvA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LLp-29-ZVo"/>
                     </view>
+                    <connections>
+                        <outlet property="LblHeaderTitle" destination="4h9-tM-AFH" id="H53-OO-GX0"/>
+                        <outlet property="commonTble" destination="hmQ-5F-ZGH" id="7ch-6L-hah"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D0R-HC-PZG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2591" y="126"/>
+            <point key="canvasLocation" x="2589.8550724637685" y="125.89285714285714"/>
         </scene>
     </scenes>
 </document>
