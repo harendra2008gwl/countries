@@ -133,26 +133,95 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency Codes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYk-FN-PvU">
+                                <rect key="frame" x="10" y="484" width="299" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="T3b-mV-qOF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfd-lI-AHW">
+                                <rect key="frame" x="329" y="484" width="55" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="J5T-MX-X7K"/>
+                                    <constraint firstAttribute="width" constant="55" id="WMO-RD-0Py"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="15"/>
+                                <state key="normal" title="Show"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Zones" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86i-tC-V0l">
+                                <rect key="frame" x="10" y="529" width="299" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0QN-xu-HFI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EvJ-6u-7bY">
+                                <rect key="frame" x="329" y="529" width="55" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="57y-Ca-hfT"/>
+                                    <constraint firstAttribute="height" constant="30" id="Uzw-uE-6wX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="15"/>
+                                <state key="normal" title="Show"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Languages" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sb4-Xd-KkV">
+                                <rect key="frame" x="10" y="574" width="299" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="iC0-gn-oBV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DS4-sK-W61">
+                                <rect key="frame" x="329" y="574" width="55" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="c6l-Hv-Urk"/>
+                                    <constraint firstAttribute="width" constant="55" id="hhp-hd-GXu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="15"/>
+                                <state key="normal" title="Show"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="tYk-FN-PvU" firstAttribute="top" secondItem="Amb-TH-qsk" secondAttribute="bottom" constant="15" id="0dS-Eg-hzv"/>
                             <constraint firstItem="n1n-tL-KEd" firstAttribute="leading" secondItem="fPc-Ds-L1c" secondAttribute="leading" constant="10" id="1tL-ls-ITR"/>
+                            <constraint firstItem="EvJ-6u-7bY" firstAttribute="leading" secondItem="86i-tC-V0l" secondAttribute="trailing" constant="20" id="6es-2a-wYO"/>
                             <constraint firstItem="fPc-Ds-L1c" firstAttribute="trailing" secondItem="n1n-tL-KEd" secondAttribute="trailing" constant="10" id="BkI-Pn-Q6q"/>
                             <constraint firstItem="7Uo-05-zDG" firstAttribute="leading" secondItem="nty-M6-ffV" secondAttribute="trailing" constant="20" id="CTc-Bx-xUJ"/>
+                            <constraint firstItem="fPc-Ds-L1c" firstAttribute="trailing" secondItem="DS4-sK-W61" secondAttribute="trailing" constant="30" id="E0M-2P-5wy"/>
+                            <constraint firstItem="DS4-sK-W61" firstAttribute="centerY" secondItem="Sb4-Xd-KkV" secondAttribute="centerY" id="FUz-T3-y2R"/>
                             <constraint firstItem="nty-M6-ffV" firstAttribute="top" secondItem="oRw-ec-vlh" secondAttribute="bottom" constant="15" id="Ga2-cT-JUF"/>
                             <constraint firstItem="BNu-9O-qHi" firstAttribute="top" secondItem="fPc-Ds-L1c" secondAttribute="top" constant="8" id="Hnw-tz-SDo"/>
                             <constraint firstItem="oRw-ec-vlh" firstAttribute="top" secondItem="n1n-tL-KEd" secondAttribute="bottom" constant="15" id="M4n-It-8NU"/>
+                            <constraint firstItem="fPc-Ds-L1c" firstAttribute="trailing" secondItem="EvJ-6u-7bY" secondAttribute="trailing" constant="30" id="PNf-6U-Fw8"/>
                             <constraint firstItem="FBK-61-qk5" firstAttribute="leading" secondItem="fPc-Ds-L1c" secondAttribute="leading" constant="10" id="ROX-gP-h4n"/>
+                            <constraint firstItem="86i-tC-V0l" firstAttribute="top" secondItem="tYk-FN-PvU" secondAttribute="bottom" constant="15" id="X6z-Su-nD4"/>
+                            <constraint firstItem="Sb4-Xd-KkV" firstAttribute="leading" secondItem="fPc-Ds-L1c" secondAttribute="leading" constant="10" id="XW3-w9-bRL"/>
+                            <constraint firstItem="Sb4-Xd-KkV" firstAttribute="top" secondItem="86i-tC-V0l" secondAttribute="bottom" constant="15" id="Z9V-6e-nhR"/>
+                            <constraint firstItem="tYk-FN-PvU" firstAttribute="leading" secondItem="fPc-Ds-L1c" secondAttribute="leading" constant="10" id="aTl-yG-3I2"/>
                             <constraint firstItem="FBK-61-qk5" firstAttribute="top" secondItem="nty-M6-ffV" secondAttribute="bottom" constant="15" id="bFX-XX-Dga"/>
                             <constraint firstItem="BNu-9O-qHi" firstAttribute="leading" secondItem="fPc-Ds-L1c" secondAttribute="leading" constant="15" id="cWY-RR-wAP"/>
+                            <constraint firstItem="Gfd-lI-AHW" firstAttribute="centerY" secondItem="tYk-FN-PvU" secondAttribute="centerY" id="cjo-mu-sFr"/>
                             <constraint firstItem="Amb-TH-qsk" firstAttribute="top" secondItem="FBK-61-qk5" secondAttribute="bottom" constant="15" id="exw-4Y-AWA"/>
                             <constraint firstItem="RH7-Cu-ZZ9" firstAttribute="centerX" secondItem="ox0-of-050" secondAttribute="centerX" id="fOt-av-xCu"/>
+                            <constraint firstItem="DS4-sK-W61" firstAttribute="leading" secondItem="Sb4-Xd-KkV" secondAttribute="trailing" constant="20" id="fQr-no-UCe"/>
+                            <constraint firstItem="EvJ-6u-7bY" firstAttribute="centerY" secondItem="86i-tC-V0l" secondAttribute="centerY" id="h1C-1g-oZP"/>
                             <constraint firstItem="fPc-Ds-L1c" firstAttribute="trailing" secondItem="Amb-TH-qsk" secondAttribute="trailing" constant="10" id="h4Y-3b-XJg"/>
                             <constraint firstItem="nty-M6-ffV" firstAttribute="leading" secondItem="fPc-Ds-L1c" secondAttribute="leading" constant="10" id="iOM-3E-hAG"/>
                             <constraint firstItem="7Uo-05-zDG" firstAttribute="centerY" secondItem="nty-M6-ffV" secondAttribute="centerY" id="jTD-w8-Fq0"/>
+                            <constraint firstItem="fPc-Ds-L1c" firstAttribute="trailing" secondItem="Gfd-lI-AHW" secondAttribute="trailing" constant="30" id="k40-GS-z7c"/>
                             <constraint firstItem="Amb-TH-qsk" firstAttribute="leading" secondItem="fPc-Ds-L1c" secondAttribute="leading" constant="10" id="lex-Ti-3at"/>
                             <constraint firstItem="n1n-tL-KEd" firstAttribute="top" secondItem="RH7-Cu-ZZ9" secondAttribute="bottom" constant="50" id="qIL-a6-nJN"/>
+                            <constraint firstItem="86i-tC-V0l" firstAttribute="leading" secondItem="fPc-Ds-L1c" secondAttribute="leading" constant="10" id="qKk-zX-DbZ"/>
                             <constraint firstItem="fPc-Ds-L1c" firstAttribute="trailing" secondItem="7Uo-05-zDG" secondAttribute="trailing" constant="30" id="sti-uj-hsI"/>
+                            <constraint firstItem="Gfd-lI-AHW" firstAttribute="leading" secondItem="tYk-FN-PvU" secondAttribute="trailing" constant="20" id="wwb-aw-0b4"/>
                             <constraint firstItem="fPc-Ds-L1c" firstAttribute="trailing" secondItem="oRw-ec-vlh" secondAttribute="trailing" constant="10" id="yN4-R5-A1W"/>
                             <constraint firstItem="oRw-ec-vlh" firstAttribute="leading" secondItem="fPc-Ds-L1c" secondAttribute="leading" constant="10" id="yoe-4N-442"/>
                             <constraint firstItem="fPc-Ds-L1c" firstAttribute="trailing" secondItem="FBK-61-qk5" secondAttribute="trailing" constant="10" id="z37-Az-BVH"/>
