@@ -66,7 +66,7 @@ extension CommonListVC: UITableViewDelegate, UITableViewDataSource {
         case .currencyCodes:
             return 100.0
         case .timeZone:
-            return 10.0
+            return 44.0
         case .languageCodes:
             return 10.0
         }
@@ -108,7 +108,7 @@ extension CommonListVC: UITableViewDelegate, UITableViewDataSource {
 
         case .timeZone:
 
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: countryCodeCell, for: indexPath) as? CountryCodeCell, let list = self.callingCodes else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: timeZoneCell, for: indexPath) as? TimeZoneCell, let list = self.timeZones else {
                 print("cell cannot be loaded")
                 return UITableViewCell()
             }
@@ -129,15 +129,4 @@ extension CommonListVC: UITableViewDelegate, UITableViewDataSource {
 
     }
 
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let country = self.countryList?[indexPath.row], let vc = Utility.getVC("CountryDetailVC") as? CountryDetailVC else {
-            return
-        }
-
-        DispatchQueue.main.async {
-            self.view.endEditing(true)
-            vc.country = country
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
-    }
 }
