@@ -42,16 +42,61 @@ class CountryDetailVC: UIViewController {
         }
     }
 
+    // MARK: IBAction Methods
+
     @IBAction func actionBackBtn() {
         navigationController?.popViewController(animated: true)
     }
 
-    @IBAction func actionCallingCodeBtn() {
-        if let vc = Utility.getVC("CommonListVC") as? CommonListVC {
-            navigationController?.present(vc, animated: true, completion: nil)
+    @IBAction func showCurrencyCodes() {
+        if let codes = self.country?.currencies, codes.count > 0 {
+            if let vc = Utility.getVC("CommonListVC") as? CommonListVC {
+                vc.currencyCodes = codes
+                vc.listType = .currencyCodes
+                navigationController?.present(vc, animated: true, completion: nil)
+            }
+        } else {
+            print("list is empty")
+            // handle zero list case
+        }
+    }
+
+    @IBAction func showCallingCodes() {
+        if let codes = self.country?.callingCodes, codes.count > 0 {
+            if let vc = Utility.getVC("CommonListVC") as? CommonListVC {
+                vc.callingCodes = codes
+                vc.listType = .callingCodes
+                navigationController?.present(vc, animated: true, completion: nil)
+            }
+        } else {
+            print("list is empty")
+            // handle zero list case
+        }
+    }
+
+    @IBAction func showTimeZones() {
+        if let codes = self.country?.timezones, codes.count > 0 {
+            if let vc = Utility.getVC("CommonListVC") as? CommonListVC {
+                vc.timeZones = codes
+                vc.listType = .timeZone
+                navigationController?.present(vc, animated: true, completion: nil)
+            }
+        } else {
+            print("list is empty")
+            // handle zero list case
+        }
+    }
+
+    @IBAction func showLanguages() {
+        if let codes = self.country?.languages, codes.count > 0 {
+            if let vc = Utility.getVC("CommonListVC") as? CommonListVC {
+                vc.languageCodes = codes
+                vc.listType = .languageCodes
+                navigationController?.present(vc, animated: true, completion: nil)
+            }
+        } else {
+            print("list is empty")
+            // handle zero list case
         }
     }
 }
-
-
-

@@ -112,7 +112,7 @@
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="15"/>
                                 <state key="normal" title="Show"/>
                                 <connections>
-                                    <action selector="actionCallingCodeBtn" destination="8p8-nd-5HY" eventType="touchUpInside" id="V7c-eg-fvS"/>
+                                    <action selector="showCallingCodes" destination="8p8-nd-5HY" eventType="touchUpInside" id="HLm-10-cyp"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Region" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBK-61-qk5">
@@ -150,6 +150,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="15"/>
                                 <state key="normal" title="Show"/>
+                                <connections>
+                                    <action selector="showCurrencyCodes" destination="8p8-nd-5HY" eventType="touchUpInside" id="Rml-GW-vrH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Zones" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86i-tC-V0l">
                                 <rect key="frame" x="10" y="529" width="299" height="30"/>
@@ -168,6 +171,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="15"/>
                                 <state key="normal" title="Show"/>
+                                <connections>
+                                    <action selector="showTimeZones" destination="8p8-nd-5HY" eventType="touchUpInside" id="rgi-IR-9a3"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Languages" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sb4-Xd-KkV">
                                 <rect key="frame" x="10" y="574" width="299" height="30"/>
@@ -186,6 +192,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="15"/>
                                 <state key="normal" title="Show"/>
+                                <connections>
+                                    <action selector="showLanguages" destination="8p8-nd-5HY" eventType="touchUpInside" id="DEz-cy-Pu1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

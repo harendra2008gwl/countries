@@ -17,14 +17,14 @@ class CommonListVC: UIViewController {
     private let timeZoneCell = "TimeZoneCell"
     private let languageCell = "LanguageCell"
 
+    // vars
     var timeZones: [String]?
     var callingCodes: [String]?
     var currencyCodes: [Currency]?
     var languageCodes: [Language]?
 
-    let listType: CommonListType = .callingCodes
-
-    private var countryList: [Country]?
+    // type to diffrentiate list UI
+    var listType: CommonListType = .callingCodes
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +53,7 @@ class CommonListVC: UIViewController {
         commonTble.keyboardDismissMode = .onDrag
     }
 
+    // MARK: Register Nibs
     private func registerNibs() {
         commonTble.register(UINib(nibName: countryCodeCell, bundle: nil), forCellReuseIdentifier: countryCodeCell)
         commonTble.register(UINib(nibName: currencyCodeCell, bundle: nil), forCellReuseIdentifier: currencyCodeCell)
