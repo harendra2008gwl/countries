@@ -28,6 +28,8 @@
 		D3794BE824477DF800320694 /* CurrencyCodeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3794BE624477DF800320694 /* CurrencyCodeCell.xib */; };
 		D3794BEB2447805100320694 /* TimeZoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3794BE92447805100320694 /* TimeZoneCell.swift */; };
 		D3794BEC2447805100320694 /* TimeZoneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3794BEA2447805100320694 /* TimeZoneCell.xib */; };
+		D3794BEF244781E400320694 /* LanguageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3794BED244781E400320694 /* LanguageCell.swift */; };
+		D3794BF0244781E400320694 /* LanguageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3794BEE244781E400320694 /* LanguageCell.xib */; };
 		D3ADFF8D2446428E007C557D /* CountryDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADFF8C2446428E007C557D /* CountryDetailVC.swift */; };
 		D3ADFF902446452C007C557D /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADFF8F2446452C007C557D /* Utility.swift */; };
 		D3ADFF9224464E36007C557D /* CommonListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ADFF9124464E36007C557D /* CommonListVC.swift */; };
@@ -80,6 +82,8 @@
 		D3794BE624477DF800320694 /* CurrencyCodeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyCodeCell.xib; sourceTree = "<group>"; };
 		D3794BE92447805100320694 /* TimeZoneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneCell.swift; sourceTree = "<group>"; };
 		D3794BEA2447805100320694 /* TimeZoneCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeZoneCell.xib; sourceTree = "<group>"; };
+		D3794BED244781E400320694 /* LanguageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageCell.swift; sourceTree = "<group>"; };
+		D3794BEE244781E400320694 /* LanguageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageCell.xib; sourceTree = "<group>"; };
 		D3ADFF8C2446428E007C557D /* CountryDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailVC.swift; sourceTree = "<group>"; };
 		D3ADFF8F2446452C007C557D /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		D3ADFF9124464E36007C557D /* CommonListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonListVC.swift; sourceTree = "<group>"; };
@@ -248,6 +252,8 @@
 				D3794BE624477DF800320694 /* CurrencyCodeCell.xib */,
 				D3794BE92447805100320694 /* TimeZoneCell.swift */,
 				D3794BEA2447805100320694 /* TimeZoneCell.xib */,
+				D3794BED244781E400320694 /* LanguageCell.swift */,
+				D3794BEE244781E400320694 /* LanguageCell.xib */,
 			);
 			path = CommonList;
 			sourceTree = "<group>";
@@ -372,6 +378,7 @@
 				D3794BE42447763100320694 /* CountryCodeCell.xib in Resources */,
 				D33ECA99244624EA003B7C4C /* Assets.xcassets in Resources */,
 				D33ECA97244624E7003B7C4C /* Main.storyboard in Resources */,
+				D3794BF0244781E400320694 /* LanguageCell.xib in Resources */,
 				D3794BE824477DF800320694 /* CurrencyCodeCell.xib in Resources */,
 				D3794BEC2447805100320694 /* TimeZoneCell.xib in Resources */,
 			);
@@ -443,6 +450,7 @@
 				D3ADFF8D2446428E007C557D /* CountryDetailVC.swift in Sources */,
 				D32233B22446381900C25066 /* CountryTblCell.swift in Sources */,
 				D3ADFF902446452C007C557D /* Utility.swift in Sources */,
+				D3794BEF244781E400320694 /* LanguageCell.swift in Sources */,
 				D32233AB24462BA800C25066 /* CountryVM.swift in Sources */,
 				D346C83B244625DC00DDE1A4 /* CountriesVC.swift in Sources */,
 				D33ECA90244624E7003B7C4C /* AppDelegate.swift in Sources */,
